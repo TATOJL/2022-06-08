@@ -1,0 +1,83 @@
+.ball {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: #265dc5;
+  color: #fff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ball.go {
+  -webkit-animation-name: go-ball;
+          animation-name: go-ball;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-transform: translateX(800%);
+          transform: translateX(800%);
+}
+
+.ball.back {
+  -webkit-animation-name: back-ball;
+          animation-name: back-ball;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+@-webkit-keyframes go-ball {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(800%);
+            transform: translateX(800%);
+  }
+}
+
+@keyframes go-ball {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(800%);
+            transform: translateX(800%);
+  }
+}
+
+@-webkit-keyframes back-ball {
+  0% {
+    -webkit-transform: translateX(800%);
+            transform: translateX(800%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes back-ball {
+  0% {
+    -webkit-transform: translateX(800%);
+            transform: translateX(800%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+/*# sourceMappingURL=js_ball.css.map */
