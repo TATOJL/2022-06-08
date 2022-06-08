@@ -3,10 +3,7 @@ let ball = document.querySelector('#run-ball');
 
 if (run && ball) {
     run.addEventListener('click', () => {
-        let classes = ball.className.split(' ');
-        let go = classes.indexOf('go') >= 0;
-
-        if (go) {
+        if (hasGo(ball)) {
             ball.classList.add('back');
             ball.classList.remove('go');
         } else {
@@ -14,4 +11,9 @@ if (run && ball) {
             ball.classList.remove('back');
         }
     })
+}
+
+function hasGo(ball) {
+    let classes = ball.className.split(' ');
+    return classes.indexOf('go') >= 0;
 }
