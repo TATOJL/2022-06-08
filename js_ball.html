@@ -12,16 +12,16 @@
     <div class="container">
         <div class="alert alert-info">JS BALL</div>
         <hr>
-        <ul>
+        <ul id="todo">
             <li>建立一顆球體與一顆按鈕。</li>
-            <li> 按鈕按鈕後，球體向左移動 80%。</li>
+            <li>按鈕按鈕後，球體向左移動 80%。</li>
             <li>再按一次按鈕，球體恢復原本位置。</li>
         </ul>
         <div class="mb-4">
             <button class="btn btn-primary" id="run-btn">Run</button>
         </div>
-        <div>
-            <span class="ball" id="run-ball">BALL</span>
+        <div id="ball-parent">
+            <span class="ball" id="run-ball" data-id="3" data-name="run-ball-1">BALL</span>
         </div>
     </div>
 </body>
